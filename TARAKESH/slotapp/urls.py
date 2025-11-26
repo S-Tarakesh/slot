@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+from slotapp import views
 
 urlpatterns = [
-    path('', views.home, name=''),
+    path('', views.time_view, name='time'),
+    path('time/', views.time_view, name='time'),
 ]    
