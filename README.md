@@ -24,10 +24,151 @@ Add your timetable using ```<td>``` tag.
 Execute the program using runserver command.
 
 ## PROGRAM
+```
+{% load static %}
+<html>
+<style>
 
+table{
+    background-color: aqua;
+}
+table {
+    background-color: white;
+}
+th {
+    background-color: yellow;
+}
+tr {
+    background-color: yellow;
+}
+td {
+    font-weight: bold;
+    font-size:x-large;
+}
+input[type=text] {
+    background-color: transparent;
+    border:transparent;
+    border:100%;
+    font-weight: bold;
+}
+#slot {
+    background-color: aqua;
+}
+#course {
+    background-color:white;
+}
+</style>
+<head>
+<title>Slot Timetable</title>
+  
+<head>
+<body>
+  <center>
+    <img src="{% static 'slotapp/images/logo.png' %}" alt="Logo" width="780" height="100">
+    </center>
+    
+<br>
+<div>
+<table id='table1' align="center" border="5" cellspacing="2" cellpadding="4">
+<caption><h2>SLOT TIMETABLE - TARAKESH (25012132)</h2></caption>
+<tr>
+<th>
+    <h2>DAY/TIME</h2>
+</th>
+<th>
+    <h2>MONDAY<h2>
+</th>
+<th>
+    <h2>TUESDAY</h2>
+</th>
+<th>
+    <h2>WEDNESDAY</h2>
+</th>
+<th><h2>THURSDAY</h2></th>
+<th>
+    <h2>FRIDAY</h2>
 
+</th>
+<th> 
+    <h2>SATURDAY</h2>
+
+</th>
+<tr>
+    <td>8-10</td>
+    <td id="slot">Python Programming</td>
+    <td id="slot"></td>
+    <td id="slot">Python Programming</td>
+    <td id="slot"></td>
+    <td id="slot"></td>
+    <td id="slot">Python Programming</td>
+    
+</tr>
+<tr>
+    <td >10-12</td> 
+    <td id="slot">Fundamentals of Web Application Development</td>
+    <td id="slot">Communicative English</td>
+    <td id="slot"></td>
+    <td id="slot">Python Programming</td>
+    <td id="slot"><input type="text"></td>
+    <td id="slot"><input type="text"></td>
+    
+</tr>
+<tr>
+    <td>12-1</td>
+    <td id="slot" rowspan="1" colspan="6" align="center">Lunch Time</td>
+</tr>
+<tr>
+    <td>1-3</td>
+    <td id="slot">Fundamentals of Web Application Development</td>
+    <td id="slot"></td>
+    <td id="slot">Mentor Meet</td>
+    <td id="slot">Fundamentals of Web Application Development</td>
+    <td id="slot">Communicative English</td>
+    <td id="slot"></td>
+    
+</tr>
+<tr>
+    <td>3-5</td>
+    <td id="slot">Communicative English</td>
+    <td id="slot"></td>
+    <td id="slot">Fundamentals of Web Application Development</td>
+    <td id="slot">Communicative English</td>
+    <td id="slot">Python Programming</td>
+    <td id="slot">Fundamentals of Web Application Development</td>
+</tr>
+</table>
+<br>
+<table id="table2" align="center" border="5" cellspacing="2" cellpadding="4">
+<th id="course">
+S.no
+</th>
+<th id="course">
+Subject Name
+</th id="course">
+<th id="course">
+Subject Code
+</th>
+<tr>
+    <td id="course">1</td>
+    <td id="course">Python Programming</td>
+    <td id="course">19AI301</td>
+</tr>
+<tr>
+    <td id="course">2</td>
+    <td id="course">Fundamentals of Web Application Development</td>
+    <td id="course">19AI414</td>
+</tr>
+<tr>
+    <td id="course">3</td>
+    <td id="course">Communicative English</td>
+    <td id="course">19EN101</td>
+</table>
+</div>
+</body>
+</html>
+```
 ## OUTPUT
-
+![alt text](image.png)
 
 ## RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
